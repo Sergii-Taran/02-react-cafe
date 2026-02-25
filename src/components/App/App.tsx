@@ -1,5 +1,5 @@
-import { useState } from 'react';
-
 import styles from './App.module.css';
 
-export default App;
+export default function App() {
+  return <div className={styles.app}></div>;
+}
