@@ -4,8 +4,6 @@ import 'modern-normalize';
 import './global.css';
 import App from './components/App/App';
 
-import './global.css';
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
