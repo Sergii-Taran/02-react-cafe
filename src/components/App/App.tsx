@@ -2,6 +2,7 @@ import { useState } from 'react';
 import css from './App.module.css';
 import CafeInfo from '../CafeInfo/CafeInfo';
 import type { Votes, VoteType } from '../../types/votes';
+import VoteOptions from '../VoteOptions/VoteOptions';
 
 export default function App() {
   const [votes, setVotes] = useState<Votes>({
@@ -28,6 +29,7 @@ export default function App() {
   return (
     <div className={css.app}>
       <CafeInfo />
+      <VoteOptions onVote={handleVote} onReset={resetVotes} canReset={true} />
     </div>
   );
 }
